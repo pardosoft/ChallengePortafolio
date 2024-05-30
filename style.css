@@ -42,38 +42,206 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sección Menu*/
 
 section.menu{
-
+    display: flex;
+    /* float: left; */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    width: 1136px;
+    margin: 0 auto;
+    margin-bottom: 32px;
 }
-section.menu ul {
+section.menu header {
+    width: 30%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    /*134px*/
+}
+section.menu header h3.menu__title {
+    margin-left: 10px;
+}
+section.menu nav {
+    width: 653px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
     justify-content: flex-end;
     align-items: center;
+    /*653px*/
+}
+section.menu nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+}
+section.menu nav>li {
+    display: none;
 }
 
 /*Sección Title*/
 
 section.title{
-
+    height: 368px;
+    width: 1136px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+section.title div.title__div {
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+section.title img.title__profile {
+    width: 368px;
+    height: 368px;
+}
+section.title div.title__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+}
+section.title h2.title__bio {
+    font-size: 52px;
+    font-weight: bold;
+    margin: 0;
+}
+section.title h3.title__subsection {
+    font-size: 22px;
+    font-weight: normal;
+    margin: 24px 0;
+}
+section.title ul.title__network {
+    margin: 0;
+    padding: 0;
+    margin-top: auto;
+}
+section.title ul li {
+    display: inline;
+    margin-right: 32px;
 }
 
 /*Sección About*/
 
 section.about{
+    background-color: #EAF2FD;
+    margin-bottom: 32px;
+    display: flex;
+}
+section.about div.about__container {
+    width: 1136px;
+    margin: 64px auto;
+}
 
+/*Sección Skills*/
+
+section.skills{
+    width: 1136px;
+    margin: 0 auto;
+    margin-bottom: 88px;
+}
+section.skills h3.skills__title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+section.skills div.skills__line {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+    justify-content: space-around;
+}
+section.skills div.skills__line ul {
+    padding: 0;
+}
+section.skills div.skills__line ul li:first-child {
+    height: 40px;
+}
+section.skills div.skills__line ul li:nth-child(2) {
+    margin: 0 auto;
+    text-align: center;
+}
+section.skills div.skills__line ul li img {
+    display: block;
+    margin: 0 auto;
 }
 
 /*Sección Hobbies*/
 
 section.hobbies{
-    
+    width: 1136px;
+    margin: 0 auto;
+    margin-bottom: 32px;
 }
+section.hobbies h3.hobbies__title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+section.hobbies div.hobbies__line {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+    justify-content: space-around;
+}
+section.hobbies div.hobbies__line ul {
+    padding: 0;
+}
+section.hobbies div.hobbies__line ul li:first-child {
+    height: 40px;
+}
+section.hobbies div.hobbies__line ul li:nth-child(2) {
+    margin: 0 auto;
+    text-align: center;
+}
+section.hobbies div.hobbies__line ul li img {
+    display: block;
+    margin: 0 auto;
+}
+
 
 /* Experiencia Académica*/
 
 section.academic{
-
+    width: 1136px;
+    margin: 82px auto;
+}
+section.academic h2.academic__title {
+    margin-bottom: 32px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+section.academic div.academic__courses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* experiencia*/
